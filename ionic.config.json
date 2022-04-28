@@ -1,0 +1,7 @@
+{
+  "name": "MagueyesAncestralesYMezcalesArtesanales",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
