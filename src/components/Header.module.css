@@ -1,0 +1,37 @@
+.container {
+  box-sizing: border-box;
+  display: flex;
+  position: relative  ;
+  text-align: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  background-color: transparent;
+  margin:0;
+}
+.imgBackground {
+  position: absolute ;
+  top: 0  ;
+  left: 0  ;
+  z-index: 0  ;
+  object-fit: cover  ;
+  display: inline-block  ;
+  height: 100% ;
+  width: 100% ;
+  object-position: 100% 10%;
+}
+.text {
+  font-size:6em  ;
+  text-align: center ;
+  color: #FFFFFF;
+  z-index: 1  ;
+  display: flex;
+  box-sizing: border-box ;
+  align-items: center ;
+  justify-content: center;
+  background-color: #00796b5d;
+  width: 100% ;
+}
+
+ion-col{
+  padding: 0 !important;
+}

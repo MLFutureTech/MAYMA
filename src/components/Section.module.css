@@ -1,0 +1,43 @@
+.container {
+  position: relative  ;
+  box-sizing: border-box ;
+  display: flex;
+  box-sizing: border-box ;
+  justify-content: center ;
+  align-items: center ;
+}
+
+.imgBackground {
+  position: absolute ;
+  top: 0  ;
+  left: 0  ;
+  z-index: 0  ;
+  object-fit: cover  ;
+  display: inline-block  ;
+  filter: blur(2px) ;
+  width: 100% ;
+}
+
+.text {
+  font-size:3em  ;
+  text-align: justify ;
+  z-index: 2  ;
+  display: flex;
+  box-sizing: border-box ;
+  justify-content: center ;
+  align-items: center ;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.odd {
+  /* background-color: rgba(8, 8, 8, 0.5); */
+  background-color: rgb(0, 120, 106);
+  color:white ;
+}
+
+.even {
+  background-color: rgb(121, 85, 72,0.4);
+  color:black ;
+} 

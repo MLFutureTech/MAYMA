@@ -1,0 +1,13 @@
+.centerText {
+  /* background-color: #757575; */
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 0.7em;
+}
+.text{
+  color: #fff;
+  text-align: left;
+  font-size: 1.2em;
+  margin-top: 0.7em;
+}
