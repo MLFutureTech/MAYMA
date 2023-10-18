@@ -1,2 +1,1 @@
-ionic build --prod
-mv build github_pages
+npm run deploy
