@@ -19,7 +19,7 @@ const Home: React.FC = () => {
           <IonTitle>Venta de Higuelos</IonTitle>
         </IonHeader> */}
         <IonGrid fixed>
-          <Header imagen="assets/images/IMG-20220419-WA0007.jpg" >
+          <Header imagen="MAYMA/assets/images/IMG-20220419-WA0007.jpg" >
             Magueyes Ancestrales & Mezcales Artezanales
           </Header>
         </IonGrid>
@@ -29,12 +29,12 @@ const Home: React.FC = () => {
           <IonCol size="2"></IonCol>
             <IonCol size="4">
               <Hijuelo titulo="Hijuelo chico" altura="entre 30 y 45 cm" cantidad="35,000 pzs" precio="$13.0 MXN" >
-                <IonImg src="assets/images/SAVE_20220427_221219.jpg" />
+                <IonImg src="MAYMA/assets/images/SAVE_20220427_221219.jpg" />
               </Hijuelo>
             </IonCol>
             <IonCol size="4">
               <Hijuelo titulo="Hijuelo grande" altura="entre 46 y 60 cm" cantidad="35,000 pzs" precio="$15.0 MXN" >
-                <IonImg src="assets/images/SAVE_20220427_221219.jpg" />
+                <IonImg src="MAYMA/assets/images/SAVE_20220427_221219.jpg" />
               </Hijuelo>
               <IonCol size="2"></IonCol>
             </IonCol>
