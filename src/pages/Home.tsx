@@ -26,18 +26,18 @@ const Home: React.FC = () => {
         <IonGrid fixed>
           <Section imagen={''} odd={true}>
             <IonRow>
-              <IonCol size="2" sizeSm='0'></IonCol>
-              <IonCol size="4" sizeSm='6'>
+              <IonCol size="2" sizeMd='0'></IonCol>
+              <IonCol sizeXl="4" sizeMd='6' sizeSm='6'>
                 <Hijuelo titulo="Hijuelo chico" altura="entre 30 y 45 cm" cantidad="35,000 pzs" precio="$13.0 MXN" >
                   <IonImg src="MAYMA/assets/images/SAVE_20220427_221219.jpg" />
                 </Hijuelo>
               </IonCol>
-              <IonCol size="4" sizeSm='6'>
+              <IonCol sizeXl="4" sizeMd='6' sizeSm='6'>
                 <Hijuelo titulo="Hijuelo grande" altura="entre 46 y 60 cm" cantidad="35,000 pzs" precio="$15.0 MXN" >
                   <IonImg src="MAYMA/assets/images/SAVE_20220427_221219.jpg" />
                 </Hijuelo>
-                <IonCol size="2" sizeSm='0'></IonCol>
               </IonCol>
+              <IonCol size="2" sizeMd='0'></IonCol>
             </IonRow>
           </Section>
         </IonGrid>
