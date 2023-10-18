@@ -2,7 +2,7 @@
   "name": "MagueyesAncestralesYMezcalesArtesanales",
   "version": "0.0.1",
   "private": true,
-  "homepage": "https://mlfuturetech.github.io/MAYMA/",
+  "homepage": "http://mlfuturetech.github.io/MAYMA/",
   "dependencies": {
     "@capacitor/app": "1.1.1",
     "@capacitor/core": "3.5.0",
