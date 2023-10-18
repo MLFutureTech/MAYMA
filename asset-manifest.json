@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MAYMA/static/css/main.d9f69d4c.css",
-    "main.js": "/MAYMA/static/js/main.bf354832.js",
+    "main.js": "/MAYMA/static/js/main.0a102b23.js",
     "static/js/630.27bda29f.chunk.js": "/MAYMA/static/js/630.27bda29f.chunk.js",
     "static/js/738.3c050936.chunk.js": "/MAYMA/static/js/738.3c050936.chunk.js",
     "static/js/372.3ca465e5.chunk.js": "/MAYMA/static/js/372.3ca465e5.chunk.js",
@@ -15,7 +15,7 @@
     "service-worker.js": "/MAYMA/service-worker.js",
     "index.html": "/MAYMA/index.html",
     "main.d9f69d4c.css.map": "/MAYMA/static/css/main.d9f69d4c.css.map",
-    "main.bf354832.js.map": "/MAYMA/static/js/main.bf354832.js.map",
+    "main.0a102b23.js.map": "/MAYMA/static/js/main.0a102b23.js.map",
     "630.27bda29f.chunk.js.map": "/MAYMA/static/js/630.27bda29f.chunk.js.map",
     "738.3c050936.chunk.js.map": "/MAYMA/static/js/738.3c050936.chunk.js.map",
     "372.3ca465e5.chunk.js.map": "/MAYMA/static/js/372.3ca465e5.chunk.js.map",
@@ -29,6 +29,6 @@
   },
   "entrypoints": [
     "static/css/main.d9f69d4c.css",
-    "static/js/main.bf354832.js"
+    "static/js/main.0a102b23.js"
   ]
 }
