@@ -5,3 +5,28 @@
     /* background-color: transparent; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+@media (max-width: 768px) {
+    .texto {
+      font-size: 3em;
+    }
+  }
+  @media (max-width: 576px) {
+    .texto {
+      font-size: 2em;
+    }
+  }
+  @media (max-width: 320px) {
+    .texto {
+      font-size: 1.5em;
+    }
+  }
+  @media (max-width: 280px) {
+    .texto {
+      font-size: 1em;
+    }
+  }
+  @media (max-width: 240px) {
+    .texto {
+      font-size: 0.8em;
+    }
+  }
