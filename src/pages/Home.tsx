@@ -10,7 +10,7 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar style={{textAlign: "center"}}>
+        <IonToolbar style={{ textAlign: "center" }}>
           <IonTitle>MA&MA</IonTitle>
         </IonToolbar>
       </IonHeader>
@@ -24,21 +24,21 @@ const Home: React.FC = () => {
           </Header>
         </IonGrid>
         <IonGrid fixed>
-        <Section imagen={''} odd={true}>
-          <IonRow>
-          <IonCol size="2"></IonCol>
-            <IonCol size="4">
-              <Hijuelo titulo="Hijuelo chico" altura="entre 30 y 45 cm" cantidad="35,000 pzs" precio="$13.0 MXN" >
-                <IonImg src="MAYMA/assets/images/SAVE_20220427_221219.jpg" />
-              </Hijuelo>
-            </IonCol>
-            <IonCol size="4">
-              <Hijuelo titulo="Hijuelo grande" altura="entre 46 y 60 cm" cantidad="35,000 pzs" precio="$15.0 MXN" >
-                <IonImg src="MAYMA/assets/images/SAVE_20220427_221219.jpg" />
-              </Hijuelo>
-              <IonCol size="2"></IonCol>
-            </IonCol>
-          </IonRow>
+          <Section imagen={''} odd={true}>
+            <IonRow>
+              <IonCol size="2" sizeSm='0'></IonCol>
+              <IonCol size="4" sizeSm='6'>
+                <Hijuelo titulo="Hijuelo chico" altura="entre 30 y 45 cm" cantidad="35,000 pzs" precio="$13.0 MXN" >
+                  <IonImg src="MAYMA/assets/images/SAVE_20220427_221219.jpg" />
+                </Hijuelo>
+              </IonCol>
+              <IonCol size="4" sizeSm='6'>
+                <Hijuelo titulo="Hijuelo grande" altura="entre 46 y 60 cm" cantidad="35,000 pzs" precio="$15.0 MXN" >
+                  <IonImg src="MAYMA/assets/images/SAVE_20220427_221219.jpg" />
+                </Hijuelo>
+                <IonCol size="2" sizeSm='0'></IonCol>
+              </IonCol>
+            </IonRow>
           </Section>
         </IonGrid>
         <IonGrid fixed>
@@ -51,7 +51,7 @@ const Home: React.FC = () => {
 
         </IonGrid>
         <IonGrid fixed>
-        <Contacto/>
+          <Contacto />
         </IonGrid>
       </IonContent>
     </IonPage >
