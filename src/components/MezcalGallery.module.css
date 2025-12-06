@@ -1,0 +1,204 @@
+.wrapper {
+  background: linear-gradient(180deg, #fff8f0 0%, #fdf3e7 100%);
+  border-radius: 32px;
+  padding: 2rem;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+  margin: 2rem 0;
+}
+
+.titleBlock {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.75rem;
+  color: #c46d2d;
+  margin-bottom: 0.5rem;
+}
+
+.heading {
+  font-size: 2rem;
+  margin: 0;
+  color: #4a2b16;
+}
+
+.subheading {
+  max-width: 640px;
+  margin: 0.5rem auto 0;
+  color: #5f4431;
+}
+
+.layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+.timelineItem button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.65);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.timelineItem button:hover {
+  border-color: #ff9f43;
+}
+
+.timelineItem.active button {
+  border-color: #00796b;
+  background: rgba(0, 121, 107, 0.08);
+  transform: translateX(6px);
+}
+
+.stageNumber {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #c46d2d;
+  color: #c46d2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.stageCopy {
+  display: flex;
+  flex-direction: column;
+}
+
+.stageTitle {
+  font-weight: 600;
+  color: #402312;
+}
+
+.stageTime {
+  color: #7c5a45;
+}
+
+.stagePanels {
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.detailCard {
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+  position: sticky;
+  top: 1rem;
+}
+
+.stageImage {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.stageDescription {
+  margin-top: 0;
+  color: #4b3526;
+}
+
+.bulletList {
+  padding-left: 1.5rem;
+  color: #4b3526;
+}
+
+.bulletList li {
+  margin-bottom: 0.35rem;
+}
+
+.stageArticles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.stageArticle {
+  min-height: 65vh;
+  border-radius: 32px;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.12);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.stageArticleActive {
+  border: 2px solid #00796b;
+}
+
+.articleImage {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.articleContent h3 {
+  margin: 0.2rem 0 0.5rem;
+  color: #3d2514;
+}
+
+.articleLabel {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+  color: #b36b2d;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .timeline {
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .timelineItem button {
+    min-width: 220px;
+  }
+
+  .stagePanels {
+    grid-template-columns: 1fr;
+  }
+
+  .detailCard {
+    position: static;
+  }
+
+  .stageArticle {
+    min-height: auto;
+  }
+}
