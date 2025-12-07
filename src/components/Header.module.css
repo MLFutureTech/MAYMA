@@ -28,7 +28,7 @@
   box-sizing: border-box ;
   align-items: center ;
   justify-content: center;
-  background-color: #00796b5d;
+  background-color: rgba(104, 126, 79, 0.45);
   width: 100% ;
 }
   /* Adjust font size of text class according to window size */

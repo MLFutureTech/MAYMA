@@ -1,5 +1,5 @@
 .homeContent {
-    --background: linear-gradient(180deg, #fefbf6 0%, #f7eee4 100%);
+    --background: linear-gradient(180deg, #f4f6ef 0%, #e7eddd 100%);
 }
 
 .scrollStack {
@@ -7,6 +7,7 @@
     flex-direction: column;
     gap: 2rem;
     padding-bottom: 4rem;
+    scroll-behavior: smooth;
 }
 
 .scrollSection {
@@ -19,9 +20,10 @@
 .sectionCard {
     border-radius: 32px;
     padding: clamp(1.5rem, 2vw, 2.5rem);
-    background: rgba(255, 255, 255, 0.92);
-    box-shadow: 0 35px 55px rgba(12, 6, 3, 0.15);
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 35px 55px rgba(35, 50, 25, 0.15);
     backdrop-filter: blur(12px);
+    border: 1px solid rgba(104, 126, 79, 0.12);
     width: 100%;
 }
 
@@ -29,7 +31,7 @@
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 0.75rem;
-    color: #b36024;
+    color: #687e4f;
     margin-bottom: 0.5rem;
 }
 
@@ -53,12 +55,12 @@
 .heroCopy h1 {
     font-size: clamp(2rem, 6vw, 3.5rem);
     margin: 0 0 0.5rem;
-    color: #2f180b;
+    color: #1f2b16;
 }
 
 .heroLead {
     font-size: 1.1rem;
-    color: #4a2b16;
+    color: #2c3b22;
     margin: 0 0 1rem;
     text-align: left;
 }
@@ -66,7 +68,7 @@
 .heroList {
     margin: 0;
     padding-left: 1.2rem;
-    color: #462516;
+    color: #334229;
 }
 
 .heroMedia ion-img {
@@ -78,15 +80,15 @@
 }
 
 .sectionCard.productCard {
-    background: rgba(255, 255, 255, 0.88);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .scrollSection.hijuelo.tierra {
-    background: linear-gradient(135deg, #fdf3e6, #ead1b4);
+    background: linear-gradient(135deg, #e7eddc, #c9d7b6);
 }
 
 .scrollSection.hijuelo.selva {
-    background: linear-gradient(135deg, #004237, #0a7f6d);
+    background: linear-gradient(135deg, #1f2f20, #2e4a30);
 }
 
 .hijueloRow {
@@ -121,10 +123,11 @@
     background: rgba(255, 255, 255, 0.9);
     border-radius: 20px;
     padding: 1.5rem;
+    border: 1px solid rgba(104, 126, 79, 0.12);
 }
 
 .scrollSection.selva .hijueloText {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.28);
     color: #fff;
 }
 
@@ -139,7 +142,7 @@
 }
 
 .scrollSection.logistics {
-    background: linear-gradient(135deg, #fff6ee, #fde9d2);
+    background: linear-gradient(135deg, #f0f5e7, #dbe6c8);
 }
 
 .infoCard {
@@ -150,12 +153,12 @@
     text-transform: uppercase;
     letter-spacing: 0.15em;
     font-size: 0.75rem;
-    color: #b36024;
+    color: #687e4f;
     margin-bottom: 0.5rem;
 }
 
 .scrollSection.gallery {
-    background: #fef8f1;
+    background: #f4f6ef;
 }
 
 .galleryCard {
@@ -165,11 +168,11 @@
 }
 
 .scrollSection.contact {
-    background: #130b06;
+    background: linear-gradient(180deg, #1a2016 0%, #12160f 100%);
     color: #fff;
 }
 
 .contactCard {
-    background: rgba(0, 0, 0, 0.35);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.12);
 }

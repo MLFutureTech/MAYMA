@@ -133,8 +133,8 @@ const MezcalGallery: React.FC<{ stages?: Stage[] }> = ({ stages = CORE_STAGES })
         <p className={styles.kicker}>Proceso mezcalero</p>
         <h2 className={styles.heading}>Galería interactiva</h2>
         <p className={styles.subheading}>
-          Explora las cinco etapas clave: toca cada estación o desplázate verticalmente para ver las
-          imágenes y detalles.
+          Explora todas las etapas: cultivo, producción, logística y contacto directo. Toca cada estación
+          o desplázate verticalmente para ver imágenes y detalles.
         </p>
       </div>
       <div className={styles.layout}>

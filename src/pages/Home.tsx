@@ -1,5 +1,4 @@
 import { IonContent, IonGrid, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import Contacto from '../components/Contacto';
 import MezcalGallery, { CORE_STAGES, Stage } from '../components/MezcalGallery';
 import './Home.css';
 
@@ -38,7 +37,7 @@ const hijueloHighlights = [
 
 const salesStage: Stage = {
   id: 'ventas',
-  title: 'Etapa de ventas',
+  title: 'Ventas',
   timeframe: 'Disponibilidad anual 35,000 piezas',
   description:
     'Ofrecemos hijuelos listos para trasplante directo desde los viveros familiares, asegurando trazabilidad y acompañamiento técnico.',
@@ -46,48 +45,50 @@ const salesStage: Stage = {
   image: 'MAYMA/assets/images/SAVE_20220427_221219.jpg',
 };
 
-const galleryStages: Stage[] = [heroStage, salesStage, ...CORE_STAGES];
+const logisticsStage: Stage = {
+  id: 'logistica',
+  title: 'Logística y entrega',
+  timeframe: 'Punto único · Santo Domingo Narro',
+  description:
+    'Coordina el traslado y pago directo en la cancha de fútbol de Santo Domingo Narro, Juquila Mixes, con acompañamiento de los productores.',
+  bulletPoints: [
+    'Venta exclusiva en la cancha de fútbol de Santo Domingo Narro, Juquila Mixes, Yautepec, Oaxaca.',
+    'Entrega inmediata: se carga al arribar y se paga al contado.',
+    'Trato directo con productores para resolver dudas y garantizar trazabilidad.',
+  ],
+  image: 'MAYMA/assets/images/SAVE_20220427_221219.jpg',
+};
 
-const logisticsCopy = [
-  'Los hijuelos se venden tal como se muestra en la fotografía; el único punto de venta disponible es en la cancha de fútbol de Santo Domingo Narro, Juquila Mixes, Yautepec, Oaxaca.',
-  'Forma de entrega: al momento de arribar al lugar se carga y se paga al contado. Trato directo con productores.',
-];
+const contactStage: Stage = {
+  id: 'contacto',
+  title: 'Contacto directo',
+  timeframe: 'Coordina tu pedido',
+  description:
+    'Escríbenos por WhatsApp o llámanos para agendar visitas, compras al mayoreo y resolver cualquier duda sobre los hijuelos o el mezcal.',
+  bulletPoints: [
+    'Iván – Productor · 123 456 789 (WhatsApp y llamada)',
+    'Jesús – Logística · 123 456 789 (WhatsApp y llamada)',
+    'Ezequiel – Maestro mezcalero · 123 456 789 (WhatsApp y llamada)',
+  ],
+  image: 'MAYMA/assets/images/IMG-20220419-WA0007.jpg',
+};
+
+const galleryStages: Stage[] = [heroStage, ...CORE_STAGES, logisticsStage, salesStage, contactStage];
 
 const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar style={{ textAlign: "center" }}>
+        <IonToolbar color="primary" style={{ textAlign: 'center' }}>
           <IonTitle>MA&MA</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent className="homeContent" fullscreen>
+      <IonContent className="homeContent" fullscreen scrollY={true} forceOverscroll={false}>
         <div className="scrollStack">
           <section className="scrollSection gallery">
             <IonGrid fixed>
               <div className="sectionCard galleryCard">
                 <MezcalGallery stages={galleryStages} />
-              </div>
-            </IonGrid>
-          </section>
-
-          <section className="scrollSection logistics">
-            <IonGrid fixed>
-              <div className="sectionCluster">
-                {logisticsCopy.map((copy, index) => (
-                  <article key={copy} className="sectionCard infoCard">
-                    <p className="infoBadge">Punto {index + 1}</p>
-                    <p>{copy}</p>
-                  </article>
-                ))}
-              </div>
-            </IonGrid>
-          </section>
-
-          <section className="scrollSection contact">
-            <IonGrid fixed style={{ padding: 0 }}>
-              <div className="sectionCard contactCard">
-                <Contacto />
               </div>
             </IonGrid>
           </section>
