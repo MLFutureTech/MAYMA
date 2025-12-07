@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MAYMA/static/css/main.3fba5f49.css",
-    "main.js": "/MAYMA/static/js/main.a1d6b93d.js",
+    "main.css": "/MAYMA/static/css/main.44c07ce2.css",
+    "main.js": "/MAYMA/static/js/main.73d70bf3.js",
     "static/js/630.27bda29f.chunk.js": "/MAYMA/static/js/630.27bda29f.chunk.js",
     "static/js/738.3c050936.chunk.js": "/MAYMA/static/js/738.3c050936.chunk.js",
     "static/js/372.3ca465e5.chunk.js": "/MAYMA/static/js/372.3ca465e5.chunk.js",
@@ -14,8 +14,8 @@
     "static/js/377.ea52da4f.chunk.js": "/MAYMA/static/js/377.ea52da4f.chunk.js",
     "service-worker.js": "/MAYMA/service-worker.js",
     "index.html": "/MAYMA/index.html",
-    "main.3fba5f49.css.map": "/MAYMA/static/css/main.3fba5f49.css.map",
-    "main.a1d6b93d.js.map": "/MAYMA/static/js/main.a1d6b93d.js.map",
+    "main.44c07ce2.css.map": "/MAYMA/static/css/main.44c07ce2.css.map",
+    "main.73d70bf3.js.map": "/MAYMA/static/js/main.73d70bf3.js.map",
     "630.27bda29f.chunk.js.map": "/MAYMA/static/js/630.27bda29f.chunk.js.map",
     "738.3c050936.chunk.js.map": "/MAYMA/static/js/738.3c050936.chunk.js.map",
     "372.3ca465e5.chunk.js.map": "/MAYMA/static/js/372.3ca465e5.chunk.js.map",
@@ -28,7 +28,7 @@
     "377.ea52da4f.chunk.js.map": "/MAYMA/static/js/377.ea52da4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fba5f49.css",
-    "static/js/main.a1d6b93d.js"
+    "static/css/main.44c07ce2.css",
+    "static/js/main.73d70bf3.js"
   ]
 }
