@@ -88,10 +88,15 @@ export const CORE_STAGES: Stage[] = [
 
 const MezcalGallery: React.FC<{ stages?: Stage[] }> = ({ stages = CORE_STAGES }) => {
   const [activeId, setActiveId] = useState<string>(stages[0].id);
+  const [revealedIds, setRevealedIds] = useState<Set<string>>(new Set([stages[0].id]));
   const stageRefs = useRef<Record<string, HTMLElement | null>>({});
   const activeStage = useMemo(() => {
     return stages.find((stage) => stage.id === activeId) ?? stages[0];
   }, [activeId, stages]);
+
+  useEffect(() => {
+    setRevealedIds(new Set([stages[0]?.id]));
+  }, [stages]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -103,6 +108,9 @@ const MezcalGallery: React.FC<{ stages?: Stage[] }> = ({ stages = CORE_STAGES })
           const stageId = visible.target.getAttribute('data-stage-id');
           if (stageId && stageId !== activeId) {
             setActiveId(stageId);
+          }
+          if (stageId && !revealedIds.has(stageId)) {
+            setRevealedIds((prev) => new Set(prev).add(stageId));
           }
         }
       },
@@ -121,6 +129,12 @@ const MezcalGallery: React.FC<{ stages?: Stage[] }> = ({ stages = CORE_STAGES })
 
   const handleSelectStage = useCallback((stageId: string) => {
     setActiveId(stageId);
+    setRevealedIds((prev) => {
+      if (prev.has(stageId)) return prev;
+      const next = new Set(prev);
+      next.add(stageId);
+      return next;
+    });
     const node = stageRefs.current[stageId];
     if (node) {
       node.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -182,7 +196,7 @@ const MezcalGallery: React.FC<{ stages?: Stage[] }> = ({ stages = CORE_STAGES })
                 ref={(element) => {
                   stageRefs.current[stage.id] = element;
                 }}
-                className={`${styles.stageArticle} ${stage.id === activeId ? styles.stageArticleActive : ''}`}
+                className={`${styles.stageArticle} ${stage.id === activeId ? styles.stageArticleActive : ''} ${revealedIds.has(stage.id) ? 'fogRevealed' : 'fogHidden'}`}
               >
                 <IonImg src={stage.image} alt={stage.title} className={styles.articleImage} />
                 <div className={styles.articleContent}>
